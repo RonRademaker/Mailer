@@ -91,7 +91,17 @@ class Mailer
     }
 
     /**
-     * Sets the receivers for the curent email
+     * Gets the message
+     *
+     * @return Swift_Message
+     */
+    public function getMessage()
+    {
+        return $this->message;
+    }
+
+    /**
+     * Sets the receivers for the current email
      *
      * @param array $receivers
      */
@@ -101,7 +111,7 @@ class Mailer
     }
 
     /**
-     * Sets the sender for the curent email
+     * Sets the sender for the current email
      *
      * @param array $sender
      */
